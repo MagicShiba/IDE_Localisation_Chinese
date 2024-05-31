@@ -3,12 +3,7 @@
   "bundle_version": "1.0.0",
   "bundle_description": "Chinese IDE localisations",
   "required": false,
-  "endpoints": [
-    {
-      "endpoint_name": "github",
-      "github_url": "https://api.github.com/repos/YoYoGames/IDE_Localisation_Chinese"
-    }
-  ],
+  "feature_flag": "",
   "plugins": [
     {
       "plugin_name": "ChineseLocalisation",
@@ -17,13 +12,21 @@
       "type": "Language",
       "plugin_data": {
         "languages": [
-            { "Chinese": "chinese.csv" },
-            {"Chinese": "chinese_dnd.csv" }
+          {
+            "Chinese": "chinese.csv"
+          },
+          {
+            "Chinese": "chinese_dnd.csv"
+          }
         ]
       },
       "description": "Chinese IDE localisations",
       "required_assemblies": [],
       "dependencies": []
     }
-  ]
+  ],
+  "endpoints": [],
+  "author": "GameMaker",
+  "signature": "SPKs/RmNotGUDebRbkwjFzftontPLIJx1CJIZPbPF8vAoiWmAsWw1ztR\u002B3Pw0tcbtkfeMXCp2dDjE92u3dpu63fzzwGbmZ0yr4rG57mRXZHGzMk/3mO13cd9GUB/WR7aBMHwFhEi\u002BKlzispQzzqGmXszT8eaYLfP1tMbKMkL5ZE=",
+  "verify": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfaWA3d2WPN5cJCqTJJj72v6p0a4toQY7MzAPpkXkDxdPpeWMbrV4AQs9V\u002BbGVZ4PaGA3Gl0DWzfSmb\u002Btd/oDtzZZ2XehhxyFg\u002BanTPo6MdTasMkXEDBU50f6e7m3ruelF1QIER0\u002BulTNMI8\u002B\u002BURtTcPu/\u002BalhiA5z7BJP/u2MWwIDAQAB"
 }
