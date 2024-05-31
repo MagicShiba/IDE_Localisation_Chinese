@@ -7817,7 +7817,6 @@ RedefineKeys_tile_line,Tile Line,磁贴线,,Redefine keys tile_line string
 RedefineKeys_tile_rect,Tile Rect,磁贴矩形,,Redefine keys tile_rect string
 RedefineKeys_tile_select,Tile Select,磁贴选择,,Redefine keys tile_select string
 RedefineKeys_tile_autotile,Tile Autotile,磁贴自动磁贴,,Redefine keys tile_autotile string
-RedefineKeys_Rotate,Rotate,旋转,,Redefine keys Rotate string
 RedefineKeys_autotile_add_full_set,Autotile Add Full Set,自动磁贴添加全套,,Redefine keys autotile_add_full_set string
 RedefineKeys_autotile_add_transition_set,Autotile Add Transition Set,自动磁贴添加转换集,,Redefine keys autotile_add_transition_set string
 RedefineKeys_autotile_delete_set,Autotile Delete Set,自动磁贴删除集,,Redefine keys autotile_delete_set string
@@ -7906,8 +7905,8 @@ RedefineKeys_SoundMixer,Sound Mixer,声音合成器,,Redefine keys location entr
 RedefineKeys_Debugger,Debugger,调试器,,Redefine keys location entry
 RedefineKeys_GMLVisual,GML Visual,GML Visual,,Redefine keys location entry
 RedefineKeys_Workspace,Workspace,工作区,,Redefine keys location entry
-RedefineKeys_Command,Command,命令,,Redefine keys Command label
-RedefineKeys_Keys,Keys,键,,Redefine keys Keys label
+RedefineKeys_Command,Command{0},命令{0},,Redefine keys Command label
+RedefineKeys_Keys,Keys{0},键{0},,Redefine keys Keys label
 Event_Other_RollbackStart,Rollback Start,回滚开始,,Other event subtype
 Event_Other_RollbackEvent,Rollback Event,回滚事件,,Other event subtype
 Event_Other_WallpaperConfig,Wallpaper Config,Wallpaper Config,,Other event subtype
