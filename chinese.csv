@@ -1522,7 +1522,7 @@ ObjVar_VariableLabelArg,Variable Label: {0},变量标签：{0},,object variable 
 ObjVar_DisplayName,Display Name,显示名称,,object variable display name
 ObjVar_Description,Description,描述,,description
 ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,可选的变量描述。\n描述和标签名称将出现在“label”图标的悬停提示中。,,objvar description detail
-ObjVar_ChildConflictMessage,"The variable '{0}' was renamed because it is already defined in child object(s): {1}\n\nDo you want to instead move variable '{0}' to this parent object?","变量'{0}'已被重命名，因为它已在子对象中定义：{1}\n\n您是否希望将变量'{0}'移至当前父对象？",,child varname conflict message
+ObjVar_ChildConflictMessage,The variable '{0}' was renamed because it is already defined in the following child object(s):,变量“{0}”已被重命名，因为它已在以下子物体中被定义。,,child varname conflict message
 ObjVar_NameConflictTitle,Variable name conflict,变量名冲突,,variable name conflict title
 OutputPanel_Output,Output,输出,,Output panel output tab name
 OutputPanel_SearchResults,Search Results,搜索结果,,Output panel search results tab name
@@ -3391,7 +3391,7 @@ ggs_build_armv7,Build for Armv7,为 Armv7 构建,,Build for Armv7
 ggs_build_mips,Build for Mips,为 Mips 构建,,Build for Mips
 ggs_build_mips64,Build for Mips64,为 Mips64 构建,,Build for Mips64
 ggs_build_x86_64,Build for x86_64,为 x86_64 构建,,Build for x86_64
-ggs_build_arm64,Build for Arm64,为 Arm64 构建,,Build for Arm64
+ggs_build_arm64,Build for Armv8 / Arm64,为 Arm64 构建,,Build for Arm64
 ggs_landscape_orientation,Allow landscape orientation,允许横向,,Allow Landscape Orientation
 ggs_portrait_orientation,Allow portrait orientation,允许纵向,,Allow Portrait Orientation
 ggs_flipped_landscape_orientation,Allow flipped landscape orientation,允许翻转横向方向,,Allow Flipped Landscape Orientation
@@ -10037,7 +10037,7 @@ PrefabBrowser_SortZA,Sort Z-A,排序 Z-A,,The context menu option
 PrefabBrowser_ZoomLevel,Zoom level,缩放级别,,The context menu option
 PrefabBrowser_ShowAll,Show all,显示所有,,The context menu option
 PrefabBrowser_AssetTypes,Asset Types,资源类型,,The sub context menu
-PrefabLibrary,Prefab Library,预制库,,prefab library title
+PrefabLibrary,Prefab Library,预制件库,,prefab library title
 PrefabLibrary_Name,Name,名称,,name
 PrefabLibrary_AssetType,Asset Type,资源类型,,asset type
 PrefabLibrary_Version,Version,版本,,version
@@ -10062,7 +10062,7 @@ PrefabLib_ChangePrefabCollectionVersions,Change Prefab Collection Versions,修�
 Prefab_Library_empty_description,Browse and Install Prefab Collections from the Package Manager,浏览并从包管理器安装预制件集,,Description for when no prefab collections are installed
 Prefab_Library_loading_description,Loading Prefab Collections...,加载预制件集…,,Message when loading Prefab Collections
 ProgressBar_Prefabs_Copying,Prefabs...,预制构件…,,Copying Prefabs progress
-Prefabs_OpenPrefabLibrary,Prefab Library,预制库,,Prefab Library
+Prefabs_OpenPrefabLibrary,Prefab Library,预制件库,,Prefab Library
 Prefabs_CreatePackage,Create Prefab Package,创建预制包,,Create Prefab Package
 Prefabs_IncludeYYZ,Include Prefab Collections with YYZ?,包含 YYZ 中的预制件集吗？,,Include all prefabs in the YYZ export
 PrefabMetadataEditor_DialogTitle,Prefab metadata settings,预制元数据设置,,Dialog title for Prefab metadata settings
@@ -10096,7 +10096,7 @@ PrefabLibrary_Folder_CustomisedPrefabItems,Prefabs,预制件,,Default Asset Brow
 PrefabLibrary_Folder_CustomisedPrefabItemsDependencies,Dependencies,依赖项,,Default Asset Browser folder name for prefab resources additionally brought in because of cycles
 prefablib_layouttype,Layout type,布局类型,,layout type pref
 prefablib_listviewtype,List view type,列表视图类型,,list view type pref
-PrefabPlugin,Prefab Library,预制库,,prefab library preference type name
+PrefabPlugin,Prefab Library,预制件库,,prefab library preference type name
 PrefabLibrary_PrefabInUse,Prefab Library - {0} - is currently in use.,预制库 - {0} - 正在使用中。,,The given prefab library is currently in use
 ListBoxEnum_eLayoutType_Horizontal,Horizontal,水平,,enum type
 ListBoxEnum_eLayoutType_Vertical,Vertical,垂直,,enum type
@@ -10225,7 +10225,7 @@ PrefabBuilder_Keywords,Keywords,关键字,,Keywords
 PrefabBuilder_Icon,Icon,图标,,Icon
 PrefabBuilder_License,License,许可,,License
 PrefabBuilder_LicenseViewTT,View License file,查看许可证文件,,view license file tooltip
-PrefabBuilder_MinIDEVersion,Min IDE Version,最小 IDE 版本,,Min IDE Version
+PrefabBuilder_MinIDEVersion,Minimum IDE Version,最低 IDE 版本要求,,Min IDE Version
 PrefabBuilder_ShortDesc,Short Description:,简短描述：,,Short Description
 PrefabBuilder_Desc,Description:,描述：,,Description
 PrefabBuilder_PkgDeps,Package Dependencies:,包依赖项：,,Package Dependencies
@@ -10250,6 +10250,9 @@ PrefabBuilder_ValidationError,"Please enter a Collection Name and Package ID\nPa
 PrefabBuilder_MaxXY,max {0}x{1},max {0}x{1},,max dimensions label
 PrefabBuilder_MaxImageSizeWarning,Image exceeds maximum size of {0} x {1},图片超过最大尺寸 {0} x {1},,max image size warning
 PrefabBuilder_NoVisibleExportsWarning,It's recommended you have at least one visible asset (e.g. a "ReadMe" Note).\nAre you sure you want to create a Prefab package with no visible assets?,建议至少包含一个可见的资源（例如："ReadMe" 备注）。\n确定要创建一个不包含任何可见资源的预制件包吗？,,prefab builder no visible warning
+PrefabBuilder_RefreshTreeTT,Refresh tree to reflect changes made to project,刷新树结构，以反映项目中所做的更改。
+,,prefab builder refresh tree tooltip
+PrefabBuilder_CollectionRefTT,Added as a Collection Reference for the current project,已作为当前项目的集合引用添加。,,prefab builder collection ref tooltip
 PackageMan_EnableUpdateNotifications,Enable update notifications,启用更新通知,null,null
 PackageMan_DisableUpdateNotifications,Disable update notifications,禁用更新通知,null,null
 Project_Slim,Slimmed,精简,,Create a Slimmed Project

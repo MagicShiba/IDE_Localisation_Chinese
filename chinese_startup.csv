@@ -57,7 +57,7 @@ Views_Menu_SyntaxErrors,Syntax Errors,语法错误,,Open Syntax Errors Window
 Views_Menu_Inspector,Inspector,检查器,,Views menu entry for inspector
 Views_Menu_Recent_Windows,Recent Windows,最近窗口,,Recent activated windows menu option
 Views_Menu_Macros,IDE Environment Variables,IDE环境变量,,View Macros window
-Prefabs_OpenPrefabLibrary,Prefab Library,预制库,,Prefab Library
+Prefabs_OpenPrefabLibrary,Prefab Library,预制件库,,Prefab Library
 IDEMenu_Texturepage,Texture Groups,纹理组,,Texture group manager
 IDEMenu_Audiogroups,Audio Groups,音频组,,Audio group manager
 IDEMenu_SoundMixer,Sound Mixer,混音器,,Open Sound Mixer
